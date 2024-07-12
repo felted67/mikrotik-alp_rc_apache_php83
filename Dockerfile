@@ -24,8 +24,8 @@ LABEL maintainer="DL7DET <detlef@lampart.de>" \
     org.label-schema.description="alpine-linux-rc-apache2-php83 mikrotik-docker-image" \
     org.label-schema.schema-version="1.0"
 
-RUN echo 'https://ftp.halifax.rwth-aachen.de/alpine/v3.19/main/' >> /etc/apk/repositories \
-    && echo 'https://ftp.halifax.rwth-aachen.de/alpine/v3.19/community' >> /etc/apk/repositories \
+RUN echo 'https://ftp.halifax.rwth-aachen.de/alpine/v3.20/main/' >> /etc/apk/repositories \
+    && echo 'https://ftp.halifax.rwth-aachen.de/alpine/v3.20/community' >> /etc/apk/repositories \
     && apk add --no-cache --update --upgrade su-exec ca-certificates
 
 FROM base AS openrc
